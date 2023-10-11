@@ -57,6 +57,8 @@ jobs:
 
       - name: Create conda environment
         run: |
+          echo '===============================ENV 1================================'
+          env
           source ${HOME}/miniconda3/bin/activate triton-preci
           conda install -y astunparse numpy ninja pyyaml setuptools cmake cffi typing_extensions future six requests dataclasses mkl mkl-include
           conda install -y -c conda-forge libstdcxx-ng
